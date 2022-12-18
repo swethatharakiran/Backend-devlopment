@@ -1,0 +1,16 @@
+{
+  "name": "backend-dev-15-12-2022",
+  "version": "1.0.0",
+  "description": "backend-dev",
+  "main": "servercreate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon servercreate.js",
+    "start-server":"node servercreate.js"
+  },
+  "author": "swetha",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

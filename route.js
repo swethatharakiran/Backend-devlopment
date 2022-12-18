@@ -27,6 +27,7 @@ const reqHandler=(req,res)=>{
         });
         return req.on('end',()=>{
             const parsebody=Buffer.concat(body).toString();
+      
             console.log(parsebody);
             const msg=parsebody.split('=')[1];
             fs.writeFile('message.txt',msg,err=>{
@@ -36,7 +37,6 @@ const reqHandler=(req,res)=>{
             });
              
         });       
-    
 }
 }
 
